@@ -1,0 +1,136 @@
+/* Cart Items */
+.cart {
+    margin: 10rem auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .cart-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  th {
+    text-align: left;
+    padding: 0.5rem;
+   color: black;
+    background-color:darkgray;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  td {
+    padding: 1rem 0.5rem;
+    font-size: 25px;
+  }
+  td input {
+    width: 5rem;
+    height: 3rem;
+    padding: 0.5rem;
+  }
+  td a {
+    color: orangered;
+    font-size: 1.4rem;
+  }
+  td img {
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1rem;
+  }
+  .total-price {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .total-price table {
+   
+    position: relative;
+    font-size: 25px;
+     right: 400px;
+    top: 450px;
+    width: 100%;
+    max-width: 35rem;
+  }
+  td:last-child {
+    text-align: right;
+  }
+  th:last-child {
+    text-align: right;
+  }
+  .checkout {
+    display: inline-block;
+  position: relative;
+  right: 190px; 
+  background-color: antiquewhite;
+    color: black;
+    padding: 1rem;
+    margin-top: 1rem;
+    top: 370px;
+  }
+  @media only screen and (max-width: 768px) {
+    .cart-info p {
+      display: none;
+    }
+    .cart table{
+     width: 100%;
+     position: relative;
+     left: 50px;
+     
+    }
+    
+    .total-price table {
+      position: relative;
+      font-size: 25px;
+        left: -300px;
+      top: 420px;
+      width: 100%;
+      max-width: 35rem;
+    }
+    td:last-child {
+      text-align: right;
+    }
+    th:last-child {
+      text-align: right;
+    }
+    .checkout {
+      
+    position: relative;
+    right: 190px; 
+    top: 390px;
+    }
+  }
+   
+  @media only screen and (max-width: 300px) {
+    .cart-info p {
+      display: none;
+    }
+    .cart table{
+      display: block;
+     width: 100%;
+     position: relative;
+     left: 200px;
+     
+    }
+    
+    .total-price table {
+      position: relative;
+      font-size: 25px;
+        left: -300px;
+      top: 730px;
+      width: 100%;
+      max-width: 35rem;
+    }
+    td:last-child {
+      text-align: right;
+    }
+    th:last-child {
+      text-align: right;
+    }
+    .checkout {
+      
+    position: relative;
+    right: 190px; 
+    top: 650px;
+    }
+  }
+   

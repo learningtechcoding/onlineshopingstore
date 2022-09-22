@@ -1,0 +1,243 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+/* GOOGLE FONTS ENDS */
+
+/* COLORS */
+:root{
+  --white: #fff;
+  --blue: #232F3E;
+  --orange: #FF9900;
+  --dark-orange: #e08600;
+}
+/* COLORS ENDS */
+/* RESET */
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* RESET ENDS */
+/* DEFAULT */
+a{
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.2s ease-in-out;
+}
+a:hover{
+  color: var(--orange);
+}
+button{
+  padding: 0.5rem 1rem; 
+  font-family: inherit;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 600;
+  background-color: inherit;
+  border: 1px hidden;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.primary-button{
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+  border-radius: 10px;
+  color: var(--blue);
+}
+.primary-button:hover{
+  background-color: var(--orange);
+  border-radius: 10px;
+  color: var(--white);
+}
+.secondary-button{
+  border: 2px solid var(--orange);
+  border-radius: 10px;
+}
+.secondary-button:hover{
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+}
+section{
+  padding: 1rem 5vw;
+}
+.label h1{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+}
+/* DEFAULT ENDS */
+/* BODY */
+
+body{
+  font-family: 'Montserrat', serif;
+}
+
+/* BODY ENDS */
+/* Hero Start  */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    height: 100vh;
+    background-image: url("https://www.tripsavvy.com/thmb/hcDNIkoyRoYGdU-5bT_8mQ7W2jo=/2121x1414/filters:fill(auto,1)/GettyImages-807210876-e3c164e87c004129945da3fd24ec3b78.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+/* Browsing History  */
+.browsing-history{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item{
+    text-align: center;
+    margin: 1rem;
+}
+.item .item-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius:5px;
+    transition: 0.4s ease-in-out;
+}
+.item .item-img:hover{
+  filter: brightness(70%);
+  cursor: pointer;
+}
+.item-label{
+    color: black;
+}
+/* Footer Start  */
+.section{
+    display: flex;
+    background-color:#232F3E;
+    color: white;
+    height: 40vh;
+    justify-content: space-around;
+}
+.music{
+    position: relative;
+    top: 30px;
+
+}
+.music h1{
+    font-size: 50px;
+}
+.music h1 span{
+    color: #FF9900;
+    font-weight: bold;
+}
+.music p{
+    font-size: 20px;
+}
+.iconfooter{
+     margin-top: 50px;
+     font-size: 40px;
+}
+.iconfooter i{
+    padding-left: 30px;
+}
+.iconfooter i:hover{
+    padding-left: 30px;
+    color:#FF9900;
+}
+.about{
+    margin-top: 40px;
+
+}
+.about h1{
+    color: #FF9900;
+font-weight: bold;
+
+}
+.about ul{
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.about ul li{
+    padding-top: 5px;
+}
+.about ul li:hover{
+    position: relative;
+    top: 1px;
+    color: #FF9900;
+}
+
+/* service Start  */
+.Service{
+    margin-top: 40px;
+
+}
+.Service h1{
+    color: #FF9900;
+font-weight: bold;
+
+}
+.Service ul{
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.Service ul li{
+    padding-top: 5px;
+}
+.Service ul li:hover{
+    position: relative;
+    top: 1px;
+    color: #FF9900;
+}
+
+/* Other Start  */
+
+.Others{
+    margin-top: 40px;
+
+}
+.Others h1{
+    color: #FF9900;
+font-weight: bold;
+
+}
+.Others ul{
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.Others ul li{
+    padding-top: 5px;
+}
+.Others ul li:hover{
+    position: relative;
+    top: 1px;
+    color: #FF9900;
+}
+
+@media(max-width: 768px){
+.section{
+    display: block;
+    background-color:#232F3E;
+    height: 100%;
+}
+.music{
+    position: relative;
+    top: 30px;
+
+}
+.music h1{
+    font-size: 20px;
+}
+.music h1 span{
+    color: #FF9900;
+    font-weight: bold;
+}
+.music p{
+    font-size: 15px;
+}
+}
+
+
